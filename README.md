@@ -39,3 +39,7 @@ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+## Security release — 2026-10-24
+Docusaurus packages aligned at 3.10.2 with targeted worker/serializer/selector/UUID/query-parser overrides for the audited transitive findings. Installation, type checking and the production build passed; npm audit reports zero vulnerabilities. The existing v4 build configuration requires @docusaurus/faster 3.10.2, now declared explicitly. Node 24.22.1 is pinned through .node-version. Hosting publication is pending. These overrides require a successful build; npm downgrade suggestions were not applied.
